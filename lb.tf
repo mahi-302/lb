@@ -7,7 +7,7 @@ resource "aws_lb" "terratasks" {
   internal           = false
   load_balancer_type = "application"
   security_groups    = ["sg-03723ff32a5606bda"]
-  subnets            = ["subnet-0c9f6c09d2f62dc2d"]
+  subnets            = ["subnet-0c9f6c09d2f62dc2d,subnet-08f3fd927977dc180,subnet-02ac0c9e52da309ab"]
 }
 resource "aws_lb_target_group" "terratasks" {
   name     = "lbtgtf"
