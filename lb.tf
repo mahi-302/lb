@@ -26,6 +26,6 @@ resource "aws_lb_listener" "front_end" {
 }
 resource "aws_lb_target_group_attachment" "abcd" {
   target_group_arn = aws_lb_target_group.abcd.arn
-  target_id        = "ii-03f429574f46d2e9f"
+  target_id        = "i-03f429574f46d2e9f"
   port             = 80
 }
